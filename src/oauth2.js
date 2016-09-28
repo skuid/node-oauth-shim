@@ -40,7 +40,7 @@ module.exports = function(p, callback) {
 	}
 
 	// Convert the post object literal to a string
-	post = param(post, function(r) {return r;});
+	post = param(post);
 
 	// Create the request
 	var r = url.parse(grant_url);
