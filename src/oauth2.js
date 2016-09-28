@@ -22,7 +22,7 @@ module.exports = function(p, callback, options) {
 			client_id: p.client_id || p.id,
 			client_secret: p.client_secret,
 			grant_type: 'authorization_code',
-			redirect_uri: encodeURIComponent(p.redirect_uri)
+			redirect_uri: p.redirect_uri
 		};
 	}
 	else if (p.refresh_token) {
